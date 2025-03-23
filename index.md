@@ -1,3 +1,8 @@
+---
+layout: default
+title: Welcome to Our Blog
+---
+
 # Welcome to Our Blog
 
 Welcome to our collection of guides and tutorials. Here you'll find helpful resources for various topics.
