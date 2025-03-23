@@ -4,6 +4,10 @@ Welcome to our collection of guides and tutorials. Here you'll find helpful reso
 
 ## Blog Posts
 
+### Conference Papers
+1. [FAST'25 Conference Papers](fast25.md) (March 23, 2025)
+
+### Technical Guides
 1. [Getting Started with GitHub Pages](getting_started.md)
    - A comprehensive guide to creating and managing your GitHub Pages site
    - Learn about prerequisites, setup steps, best practices, and troubleshooting
