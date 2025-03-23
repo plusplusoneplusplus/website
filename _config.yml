@@ -1,1 +1,12 @@
 theme: jekyll-theme-midnight
+
+title: My Blog
+description: A collection of articles and resources
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
