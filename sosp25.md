@@ -1,4 +1,4 @@
-Operating Systems and Virtualization
+# Operating Systems and Virtualization
 
 LithOS: An Operating System for Efficient Machine Learning on GPUs. This paper introduces a new OS, LithOS, designed to optimize GPU utilization for machine learning workloads ￼. LithOS rearchitects GPU resource management with a per-core (TPC) scheduler and a “kernel atomizer” that breaks GPU kernels into smaller units to reduce blocking and enable dynamic resource reallocation ￼. It also implements lightweight hardware right-sizing and power management mechanisms to match GPU resources to workload demands ￼. Together, these innovations allow multiple ML tasks to efficiently share GPUs, improving throughput and reducing interference.
 
@@ -22,7 +22,7 @@ Scalable Address Spaces using Concurrent Interval Skiplist. This paper addresses
 
 Mitigating Application Resource Overload with Targeted Task Cancellation. The authors present a runtime mechanism to handle overload in multi-tenant systems by selectively canceling tasks. The system monitors resource saturation (CPU, memory or I/O) and proactively cancels or defers lower-priority tasks to relieve pressure. The key contribution is a targeted cancellation policy guided by online profiling: rather than indiscriminately throttling, it identifies specific tasks causing overload and safely aborts them. This approach improves overall responsiveness and prevents cascading failures under extreme load, demonstrating a practical OS-level strategy for maintaining QoS during overload conditions.
 
-Storage and File Systems
+# Storage and File Systems
 
 Aeolia: A Fast and Secure Userspace Interrupt-Based Storage Stack. Aeolia introduces a storage stack that moves I/O processing to userspace and replaces traditional polling with an interrupt-based mechanism ￼. The system allows user-level storage drivers to receive asynchronous notifications (interrupts) for I/O completions, drastically reducing latency. To ensure security, Aeolia sandboxes the user-level storage handlers and uses hardware virtualization extensions to protect kernel data ￼. Its primary contribution is demonstrating that a userspace storage stack can achieve kernel-level performance while providing strong isolation, by carefully handling interrupts and direct device access in a secure manner.
 
@@ -36,7 +36,7 @@ Fawkes: Finding Data Durability Bugs in DBMSs via Recovered Data State Verificat
 
 WASIT: Deep and Continuous Differential Testing of WebAssembly System Interface Implementations. WASIT introduces a fuzzing framework to test implementations of the WebAssembly System Interface (WASI) for consistency and security. It generates random but semantically equivalent operations across different WASI runtimes and then compares the outcomes (state, outputs) continuously ￼. By observing divergences in behavior, WASIT can pinpoint bugs or undefined behaviors in WASI implementations. The main contribution is applying differential testing in a deep, ongoing fashion to the WebAssembly OS interface, uncovering issues in how various runtimes handle system calls. This work improves the robustness of WebAssembly as a safe, portable computing platform by hardening its system interface.
 
-Memory and Disaggregated Systems
+# Memory and Disaggregated Systems
 
 Oasis: Pooling PCIe Devices Over CXL to Boost Utilization. Oasis provides a mechanism to dynamically pool and share PCIe devices (like accelerators or SSDs) across multiple hosts via the CXL interconnect ￼. It contributes a control plane and data path for remapping PCIe traffic over CXL, effectively allowing one machine to use devices physically attached to another ￼. The key novelty is handling the challenges of routing device memory and interrupts across host boundaries with low overhead. Oasis’s pooled CXL approach significantly improves utilization by letting underused devices be lent to other machines on demand, demonstrating a practical step toward composable disaggregated hardware in data centers ￼.
 
@@ -50,7 +50,7 @@ Orthrus: Efficient and Timely Detection of Silent User Data Corruption in the Cl
 
 CortenMM: Efficient Memory Management with Strong Correctness Guarantees. CortenMM is a memory management system that aims to be both high-performance and formally correct ￼. It introduces a new allocator algorithm that is optimized for multithreaded scalability while providing provable safety properties (like no use-after-free or double-free). The key contribution is combining low-level efficiency tricks (such as slab allocation and bulk freeing) with machine-checked proofs of correctness. In essence, CortenMM offers the speed of state-of-the-art memory allocators and memory management (MM) schemes, but with the added assurance that its operations satisfy strict correctness invariants under concurrency. This gives strong reliability guarantees without sacrificing performance ￼.
 
-Cloud Computing and Resource Management
+# Cloud Computing and Resource Management
 
 COpter: Efficient Large-Scale Resource-Allocation via Continual Optimization. COpter reconceptualizes cloud resource allocation as a never-ending optimization problem rather than periodic static assignments ￼. It treats resource allocation (for CPU, memory, etc.) as a continuously adjusting linear programming (LP) that evolves with workload changes. The novel idea is continual optimization: instead of solving from scratch for each scheduling interval, COpter updates the previous solution incrementally as demands shift ￼. This approach yields near-optimal allocations much faster than recomputation. The paper’s contribution is demonstrating that a sequence of interconnected optimization problems can be efficiently solved in an online manner, significantly improving allocation agility and utilization in large clusters ￼.
 
@@ -66,7 +66,7 @@ Tiga: Accelerating Geo-Distributed Transactions with Synchronized Clocks. Tiga a
 
 Pesto: Cooking up High Performance BFT Queries. Pesto is a system for executing queries in a Byzantine Fault Tolerant (BFT) database or service with high throughput ￼. It introduces a set of optimizations (“ingredients”) that drastically reduce the overhead typically associated with BFT consensus for each query. This includes batching queries, speculative execution, and lightweight verification mechanisms that cut down cryptographic costs. The key contribution is showing that BFT systems, often considered too slow for high-performance use, can indeed support demanding workloads by carefully redesigning the query processing pipeline ￼. Pesto achieves much lower latency and higher throughput for read/write operations under Byzantine assumptions, making robust distributed systems more practical.
 
-Security and Reliability
+# Security and Reliability
 
 ORQ: Complex Analytics on Private Data with Strong Security Guarantees. ORQ is a system enabling rich data analytics on sensitive data while preserving privacy and security ￼. It provides an analytical engine that operates on encrypted or access-restricted data without exposing raw values. The novelty is a combination of cryptographic techniques (like secure multi-party computation or homomorphic encryption) with query optimization to handle complex queries (ORQ stands for “Analytics on pRivate Data with strong Quality”) efficiently. The result is that organizations can run sophisticated analytics (e.g., SQL queries, machine learning) on joint datasets from multiple parties or on encrypted databases, getting accurate results with provable security that the raw private data remains undisclosed. ORQ demonstrates that strong security need not come at the cost of analytic expressiveness ￼.
 
