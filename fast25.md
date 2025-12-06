@@ -216,6 +216,17 @@ This work sits at the intersection of coding theory, synthetic biology, and stor
 ### Industry Significance
 As DNA storage approaches practical use, having a generative tool means companies can quickly adapt DNA storage to new use cases or devices. For example, if a new sequencing machine has trouble with certain motifs, this tool could generate a new set of DNA encodings that avoid those, without overhauling the whole system. It also potentially improves data density and accuracy: better sequences mean fewer errors and retries, which lowers cost. In the long run, if DNA storage is commercialized, such a tool would be part of the "compiler" or middleware that takes user data and encodes it into DNA. It ensures high reliability and longevity of stored data by embedding biochemical resilience directly into the data encoding stage.
 
+## GeminiFS: A Companion File System for GPUs
+
+### Main Innovation
+The core innovation is GeminiFS, a "companion" file system that enables GPUs to access files directly from NVMe storage with high performance while leveraging the host file system for metadata management. Unlike existing GPU-centric storage solutions (like BaM) which lack file abstractions, or CPU-centric ones which suffer from synchronization overhead, GeminiFS embeds file metadata directly into files on the host side. This design allows the GPU to retrieve metadata and access data directly via NVMe queues without CPU intervention for the data path. Additionally, it introduces a parallel control plane mechanism by extending the NVMe driver to allow both CPU and GPU to manage storage queues concurrently, along with a software-defined, GPU-friendly page cache to maximize internal GPU bandwidth.
+
+### Academic Significance
+GeminiFS addresses the critical gap between raw storage access performance and the need for high-level file abstractions in GPU computing. It advances the state of the art by demonstrating how to decouple metadata management (handled by the CPU) from data access (handled by the GPU) in a shared storage environment, effectively overcoming the traditional trade-off between functionality and performance. This work opens new research directions for "companion" architectures where accelerators like GPUs can operate as semi-autonomous I/O entities, potentially influencing future designs of heterogeneous operating systems and storage stacks for data-intensive AI/ML workloads.
+
+### Industry Significance
+For industry, GeminiFS offers a practical solution to the memory capacity bottleneck in large-scale ML applications (such as LLMs and GNNs) by enabling efficient, file-based storage expansion. By permitting direct, high-throughput file access from GPUs, it significantly improves the performance of I/O-intensive training and inference tasks compared to current state-of-the-art solutions. This technology could be integrated into AI infrastructure and cloud platforms to allow larger models to run on fewer GPUs or with cheaper storage-based memory expansion, directly improving cost-efficiency and scalability for commercial AI deployments.
+
 # Trends and Emerging Directions in FAST '25 Innovations
 
 Collectively, the FAST '25 papers highlight several notable trends and breakthroughs in file and storage technologies:
