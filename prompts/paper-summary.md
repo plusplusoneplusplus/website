@@ -3,7 +3,7 @@ Summarize the following paper in the exact structure below. Keep it concise but 
 Format:
 
 ```
-## <Paper Title>
+## <Paper Title> (from Company/University)
 
 ### Main Innovation
 [One–two paragraphs explaining the core technical idea, what is new, and how it works.]
