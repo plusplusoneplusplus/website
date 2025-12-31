@@ -9,16 +9,23 @@ Hey there! 👋 Welcome to my corner of the internet where I share insights, exp
 
 ## Latest Posts
 
+### Blog Posts
+- [2025 Year End Reflections](2025ye-reflections.md) (Dec 30, 2025)
+
 ### Conference Papers
-1. [FAST'25 Conference Papers](fast25.md) (March 23, 2025)
+- '25 Conference Papers (March 23, 2025)
    - Latest research and findings in storage systems and technology
+   - [Fast 25](fast25.md)
+   - [OSDI 25](osdi25.md)
+   - [CIDR 25](cidr25.md)
+   - [VLDB 25](vldb25.md)
 
 ### Technical Guides
-1. [Getting Started with GitHub Pages](getting_started.md)
+- [Getting Started with GitHub Pages](getting_started.md)
    - A comprehensive guide to creating and managing your GitHub Pages site
    - Perfect for beginners looking to establish their online presence
 
-2. [Common Issues on macOS](issues_macos.md)
+- [Common Issues on macOS](issues_macos.md)
    - Practical solutions for day-to-day macOS challenges
    - Tips and tricks for better productivity on macOS
 
