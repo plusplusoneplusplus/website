@@ -13,8 +13,7 @@ Hey there! 👋 Welcome to my corner of the internet where I share insights, exp
 - [2025 Year End Reflections](2025ye-reflections.md) (Dec 30, 2025)
 
 ### Conference Papers
-- '25 Conference Papers (March 23, 2025)
-   - Latest research and findings in storage systems and technology
+- '25 Conference Papers
    - [Fast 25](fast25.md)
    - [OSDI 25](osdi25.md)
    - [CIDR 25](cidr25.md)
