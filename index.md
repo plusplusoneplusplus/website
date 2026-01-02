@@ -14,10 +14,10 @@ Hey there! 👋 Welcome to my corner of the internet where I share insights, exp
 
 ### Conference Papers
 - '25 Conference Papers
-   - [Fast 25](fast25.md)
-   - [OSDI 25](osdi25.md)
-   - [CIDR 25](cidr25.md)
-   - [VLDB 25](vldb25.md)
+   - [Fast 25](./conf/fast25.md)
+   - [OSDI 25](./conf/osdi25.md)
+   - [CIDR 25](./conf/cidr25.md)
+   - [VLDB 25](./conf/vldb25.md)
 
 ### Technical Guides
 - [Getting Started with GitHub Pages](getting_started.md)
