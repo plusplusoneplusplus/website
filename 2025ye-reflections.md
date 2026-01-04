@@ -23,11 +23,15 @@ For the past several years, despite growing experience, my output remained flat 
 
 The secret? Multi-tasking. I now work on 3-4 tasks simultaneously, keeping either the GPU (LLM generation) or CPU (compilation and execution) constantly busy. The goal is simple: always have one running to maximize efficiency.
 
+**Wish list:** trade more compute for better results. In enterprise settings, agent cost is rarely the constraint — human labor is orders of magnitude more expensive. Given that asymmetry, I want deep-research-like agents for every exploration during a task. Think of it like the reasoning effort dial in the GPT family: for critical code paths, crank it to *extra high*; for boilerplate or low-risk changes, *medium* is fine. Let me allocate compute where it matters most.
+
 ### Side Projects
 
 Outside of work, I made over **4,000 commits** to personal GitHub repositories this year — yet many are small and incremental, driven by looping coding agents. This let me experiment with areas I'd never have time for otherwise: agentic orchestrators, MCP servers, VSCode Extension, CUDA, reinforcement learning, database internals, and performance optimization.
 
 I maintain four subscriptions: Cursor (500 requests/month), Claude (switching between Max and Pro depending on workload), ChatGPT/Codex, and GitHub Copilot (1000 requests/month). I rotate between them to work around usage limits and explore new features after their major updates. Since most have weekly/monthly caps, leaving quota unused feels like waste — so I push to use everything available. These limits became a forcing function, driving me to write far more code than I otherwise would.
+
+**Wish list:** harness fragmented time for meaningful contribution. Much of my day is spent between tasks — moments that feel wasted. I'd love to interact with coding agents through casual conversation during these gaps. Describe a feature idea, refine the approach through dialogue, and find a working prototype when I return to my desk. The pieces are almost there; the integration and user journey just need to catch up.
 
 ### Challenges
 
