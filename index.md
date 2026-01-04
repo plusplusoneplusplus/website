@@ -34,4 +34,6 @@ Feel free to explore the posts above, and check back regularly for new content. 
 
 ---
 
+*All opinions expressed here are my own and do not represent the views of my employer.*
+
 *This blog is powered by GitHub Pages and Jekyll. Want to suggest an edit? Visit the [GitHub repository](https://github.com/plusplusoneplusplus/website/edit/master/index.md).*
