@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap");
+
+:root {
+  --bg: #0f172a;
+  --bg-accent: #0b1023;
+  --panel: #f8fafc;
+  --panel-strong: #ffffff;
+  --ink: #0f172a;
+  --ink-muted: #475569;
+  --accent: #f97316;
+  --accent-strong: #ea580c;
+  --accent-soft: rgba(249, 115, 22, 0.18);
+  --shadow: 0 24px 60px rgba(15, 23, 42, 0.25);
+  --radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at top, rgba(251, 146, 60, 0.2), transparent 50%),
+    linear-gradient(160deg, var(--bg), var(--bg-accent));
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.site-title {
+  font-family: "Fraunces", "Georgia", serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #fef3c7;
+  text-decoration: none;
+}
+
+.site-subtitle {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.05rem;
+  max-width: 640px;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.nav-link {
+  align-self: flex-start;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(15, 23, 42, 0.45);
+  color: #fef3c7;
+  text-decoration: none;
+  transition: transform 200ms ease, background 200ms ease, border-color 200ms ease;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+  background: rgba(249, 115, 22, 0.25);
+  border-color: rgba(249, 115, 22, 0.8);
+}
+
+.card {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: clamp(24px, 3vw, 36px);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+  animation: rise 600ms ease both;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(249, 115, 22, 0.12), transparent 45%);
+  pointer-events: none;
+}
+
+.card > * {
+  position: relative;
+  z-index: 1;
+  animation: fadeUp 500ms ease both;
+}
+
+.card > *:nth-child(1) { animation-delay: 80ms; }
+.card > *:nth-child(2) { animation-delay: 140ms; }
+.card > *:nth-child(3) { animation-delay: 200ms; }
+.card > *:nth-child(4) { animation-delay: 260ms; }
+.card > *:nth-child(5) { animation-delay: 320ms; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", "Georgia", serif;
+  color: var(--ink);
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+p,
+li {
+  color: var(--ink-muted);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+a {
+  color: var(--accent-strong);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+ul {
+  padding-left: 1.4rem;
+}
+
+li + li {
+  margin-top: 0.35rem;
+}
+
+blockquote {
+  margin: 1.6rem 0;
+  padding: 16px 20px;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 12px;
+  color: var(--ink);
+}
+
+code,
+pre {
+  font-family: "SFMono-Regular", "Consolas", "Liberation Mono", monospace;
+  font-size: 0.95rem;
+}
+
+pre {
+  padding: 16px;
+  border-radius: 12px;
+  background: #0f172a;
+  color: #e2e8f0;
+  overflow-x: auto;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: rgba(15, 23, 42, 0.1);
+  margin: 2rem 0;
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 36px 18px 60px;
+  }
+
+  .nav-link {
+    width: fit-content;
+  }
+}

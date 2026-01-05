@@ -2,40 +2,6 @@
 layout: base
 ---
 
-<div class="container">
-  <div class="navigation">
-    <a href="/website" class="button">← Back to Main Page</a>
-  </div>
-  
-  <div class="content">
-    {{ content }}
-  </div>
-</div>
-
-<style>
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.navigation {
-  margin-bottom: 20px;
-}
-
-.button {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #0366d6;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-</style> 
+<article class="card">
+  {{ content }}
+</article>

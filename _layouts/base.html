@@ -1,5 +1,23 @@
 ---
-layout: jekyll-theme-midnight
 ---
-
-{{ content }} 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-header">
+        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <p class="site-subtitle">Notes, guides, and conference digests from my tech journey.</p>
+        {% if page.url != '/' and page.url != '/index.html' %}
+          <a class="nav-link" href="{{ '/' | relative_url }}">← Back to Main Page</a>
+        {% endif %}
+      </header>
+      {{ content }}
+    </div>
+  </body>
+</html>
