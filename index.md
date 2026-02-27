@@ -13,6 +13,9 @@ Hey there! 👋 Welcome to my corner of the internet where I share insights, exp
 - [2025 Year End Reflections](2025ye-reflections.md) (Dec 30, 2025)
 
 ### Conference Papers
+- '26 Conference Papers
+   - [Fast 26](./conf/fast26.md)
+
 - '25 Conference Papers
    - [Fast 25](./conf/fast25.md)
    - [OSDI 25](./conf/osdi25.md)
