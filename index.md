@@ -10,6 +10,7 @@ Hey there! 👋 Welcome to my corner of the internet where I share insights, exp
 ## Latest Posts
 
 ### Blog Posts
+- [AI-Assisted Formal Methods: A Game Changer](ai-formal-methods.md) (Jan 13, 2026)
 - [2025 Year End Reflections](2025ye-reflections.md) (Dec 30, 2025)
 
 ### Conference Papers
