@@ -228,6 +228,35 @@ p:last-child em {
   }
 }
 
+/* Lightbox */
+article img {
+  cursor: zoom-in;
+}
+
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+.lightbox-overlay.open {
+  display: flex;
+}
+
+.lightbox-overlay img {
+  max-width: 92vw;
+  max-height: 92vh;
+  object-fit: contain;
+  cursor: default;
+  border-radius: 2px;
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.6);
+}
+
 /* Print styles */
 @media print {
   body {

@@ -20,4 +20,29 @@
       {{ content }}
     </div>
   </body>
+  <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+  <script>
+    (function () {
+      var overlay = document.getElementById('lightbox');
+      var lbImg = document.getElementById('lightbox-img');
+
+      document.querySelectorAll('article img').forEach(function (img) {
+        img.addEventListener('click', function () {
+          lbImg.src = img.src;
+          lbImg.alt = img.alt;
+          overlay.classList.add('open');
+        });
+      });
+
+      overlay.addEventListener('click', function (e) {
+        if (e.target !== lbImg) overlay.classList.remove('open');
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') overlay.classList.remove('open');
+      });
+    })();
+  </script>
 </html>
