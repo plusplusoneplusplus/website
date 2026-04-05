@@ -105,6 +105,14 @@ Together, the platform and skills cover everything you need: the platform handle
 ![Agent Skills settings view showing global and repo-specific skills](/assets/coc/coc-006.png){: style="max-width:75%;display:block;margin:0 auto"}
 *Figure 6. Agent Skills management view, showing global and repo-scoped skills available across projects.*{: style="display:block;text-align:center"}
 
+# By the Numbers
+
+Since CoC took over its own development in early 2026, the commit activity tells its own story.
+
+![Daily commit activity by author showing the shift from Cursor and Claude to CoC over time](/assets/coc/commit_activity.png){: style="max-width:90%;display:block;margin:0 auto"}
+*3,329 commits from Dec 2025 to Apr 2026 — 79% AI co-authored. Cursor (orange) and Claude (pink) carried the early days; Copilot/CoC (green) has dominated ever since.*{: style="display:block;text-align:center"}
+
+701 human commits. 2,628 AI. The platform builds itself — and the chart shows exactly when that transition happened.
 
 # A Few Honest Learnings
 
