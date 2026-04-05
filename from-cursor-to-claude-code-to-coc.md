@@ -45,7 +45,7 @@ A better system externalizes that context entirely — structured task queues, c
 
 When a task completes, CoC surfaces a compact summary of what changed — tool calls, commits, and key decisions — so you can pick up exactly where the AI left off without re-reading a conversation.
 
-![Task completion summary showing structured output with key changes](/assets/coc/coc-003.png){: style="max-width:75%"}
+![Task completion summary showing structured output with key changes](/assets/coc/coc-003.png){: style="max-width:75%;display:block;margin:0 auto"}
 *Figure 1. Compact task completion summary surfacing key changes, commits, and decisions.*{: style="display:block;text-align:center"}
 
 ## Alignment
@@ -74,20 +74,20 @@ Here is how CoC pushes those boundaries:
 
 * **Task Orchestration & Queues**: Tasks should be queueable, not just interactive. Tasks run in Ask or Plan mode (read-only), or Autopilot and Script mode (read-write). Read-only tasks run in parallel with configurable concurrency, while read-write tasks run sequentially to prevent conflicts — parallel writes to the same codebase cause one agent's changes to invalidate another's context mid-run. This means I can queue up a batch of work, step away, and come back to results — instead of babysitting each task one at a time.
 
-![The task dashboard showing running and queued tasks, each with its own isolated conversation](/assets/coc/coc-001.png){: style="max-width:75%"}
+![The task dashboard showing running and queued tasks, each with its own isolated conversation](/assets/coc/coc-001.png){: style="max-width:75%;display:block;margin:0 auto"}
 *Figure 2. Task dashboard with running and queued tasks, each in its own isolated conversation.*{: style="display:block;text-align:center"}
 
 * **Scheduling**: Beyond queuing, jobs can be set to trigger on a recurring schedule — nightly, weekly, or at any specific time — without any manual initiation. This enables a class of tasks that don't fit the interactive model at all: automated code health checks, periodic syncs, or any recurring workflow you'd otherwise forget to run.
 
-![The schedules view with recurring jobs configured across multiple repositories](/assets/coc/coc-004.png){: style="max-width:75%"}
+![The schedules view with recurring jobs configured across multiple repositories](/assets/coc/coc-004.png){: style="max-width:75%;display:block;margin:0 auto"}
 *Figure 3. Schedules view with recurring jobs configured to run automatically.*{: style="display:block;text-align:center"}
 
 * **Asynchronous Alignment**: The best review experience already exists in our standard code review process — someone submits a proposal, and the reviewer comments directly on the code. CoC brings that model to AI: instead of reading chat logs, the AI submits proposals as Git diffs or Markdown specs, and I review them with inline comments, turning the AI into a true asynchronous collaborator.
 
-![Spec review with root cause analysis and proposed fix, with inline comments on the right](/assets/coc/coc-002.png){: style="max-width:75%"}
+![Spec review with root cause analysis and proposed fix, with inline comments on the right](/assets/coc/coc-002.png){: style="max-width:75%;display:block;margin:0 auto"}
 *Figure 4. Spec review with root cause analysis and proposed fix, reviewed via inline comments.*{: style="display:block;text-align:center"}
 
-![Diff review showing code changes with inline comment thread](/assets/coc/coc-005.png){: style="max-width:75%"}
+![Diff review showing code changes with inline comment thread](/assets/coc/coc-005.png){: style="max-width:75%;display:block;margin:0 auto"}
 *Figure 5. Diff review with inline comment thread for asynchronous code feedback.*{: style="display:block;text-align:center"}
 
 * **Multi-Repository Support**: CoC supports multiple repositories and multiple clones of a single remote — without Git worktrees as a built-in primitive, a concept I've never liked due to the management and memory overhead it introduces. Instead, everything stays on the main branch and fixes are committed as fixups, keeping the workflow simple and predictable.
@@ -102,7 +102,7 @@ CoC is built around skills from the ground up — integrating, managing, and sha
 
 Together, the platform and skills cover everything you need: the platform handles orchestration, context, and execution; skills define what the AI knows how to do. As your skill library grows across projects, so does the AI's capability — without any extra overhead.
 
-![Agent Skills settings view showing global and repo-specific skills](/assets/coc/coc-006.png){: style="max-width:75%"}
+![Agent Skills settings view showing global and repo-specific skills](/assets/coc/coc-006.png){: style="max-width:75%;display:block;margin:0 auto"}
 *Figure 6. Agent Skills management view, showing global and repo-scoped skills available across projects.*{: style="display:block;text-align:center"}
 
 
