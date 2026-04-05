@@ -7,11 +7,11 @@ title: From Cursor to Claude Code to CoC
 
 So, what exactly is CoC (Copilot of Copilot)?
 
-The short version: **it's a cockpit built for AI**. But the longer, more honest version is that it's the tool I built because nothing else fit the way I actually work.
+The short version: **it's a <span class="highlight">cockpit built for AI</span>**. But the longer, more honest version is that it's the tool I built because nothing else fit the way I actually work.
 
 Over 10,000 vibe-coding commits across personal projects, and hundreds of production commits in one of the world's most complex, mission-critical distributed systems — I've spent a lot of time figuring out where the friction really lives. CoC is the answer to every workflow frustration I couldn't fix any other way.
 
-**The core idea: optimize for your attention.**
+**The core idea: <span class="highlight">optimize for your attention</span>.**
 
 Traditional interfaces trap you in a linear, back-and-forth loop. One conversation, one thread, one task at a time. CoC throws that model out entirely and is built around true asynchronous multi-tasking —  the kind that actually matches how engineers think and work, without the mental overhead that usually comes with it.
 
@@ -35,7 +35,7 @@ But before getting into what CoC does, it's worth being specific about what I wa
 
 # Where the Friction Lives
 
-The only truly limited resource in software engineering is human attention. Everything I kept hitting came back to that.
+The only truly limited resource in software engineering is <span class="highlight">human attention</span>. Everything I kept hitting came back to that.
 
 ## Context Switching
 
@@ -82,7 +82,7 @@ Here is how CoC pushes those boundaries:
 ![The schedules view with recurring jobs configured across multiple repositories](/assets/coc/coc-004.png){: style="max-width:75%;display:block;margin:0 auto"}
 *Figure 3. Schedules view with recurring jobs configured to run automatically.*{: style="display:block;text-align:center"}
 
-* **Asynchronous Alignment**: The best review experience already exists in our standard code review process — someone submits a proposal, and the reviewer comments directly on the code. CoC brings that model to AI: instead of reading chat logs, the AI submits proposals as Git diffs or Markdown specs, and I review them with inline comments, turning the AI into a true asynchronous collaborator.
+* **Asynchronous Alignment**: The best review experience already exists in our standard code review process — someone submits a proposal, and the reviewer comments directly on the code. CoC brings that model to AI: instead of reading chat logs, the AI submits proposals as Git diffs or Markdown specs, and I review them with inline comments, turning the AI into a true asynchronous collaborator. Once done, a single <span class="highlight">"Resolve All with AI"</span> button batches all the comments and sends them back to the AI in one shot.
 
 ![Spec review with root cause analysis and proposed fix, with inline comments on the right](/assets/coc/coc-002.png){: style="max-width:75%;display:block;margin:0 auto"}
 *Figure 4. Spec review with root cause analysis and proposed fix, reviewed via inline comments.*{: style="display:block;text-align:center"}
@@ -98,7 +98,7 @@ CoC is still evolving, and every iteration is now built by the platform itself. 
 
 # Skills as a First-Class Feature
 
-CoC is built around skills from the ground up — integrating, managing, and sharing them across repositories is a core part of the platform, not an afterthought. Skills are natively supported by the copilot-sdk, so the workflow for developing and deploying them is the same as any other code.
+<span class="highlight">CoC is built around skills</span> from the ground up — integrating, managing, and sharing them across repositories is a core part of the platform, not an afterthought. Skills are natively supported by the copilot-sdk, so the workflow for developing and deploying them is the same as any other code.
 
 Together, the platform and skills cover everything you need: the platform handles orchestration, context, and execution; skills define what the AI knows how to do. As your skill library grows across projects, so does the AI's capability — without any extra overhead.
 

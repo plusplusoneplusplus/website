@@ -199,6 +199,11 @@ strong {
   font-weight: 600;
 }
 
+.highlight {
+  color: #b45309;
+  font-weight: 600;
+}
+
 /* Footer-style text */
 p:last-child em {
   color: var(--ink-muted);
