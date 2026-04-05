@@ -10,6 +10,7 @@ Hey there! 👋 Welcome to my corner of the internet where I share insights, exp
 ## Latest Posts
 
 ### Blog Posts
+- [From Cursor to Claude Code to CoC](from-cursor-to-claude-code-to-coc.md) (Apr 3, 2026)
 - [AI-Assisted Formal Methods: A Game Changer](ai-formal-methods.md) (Jan 13, 2026)
 - [2025 Year End Reflections](2025ye-reflections.md) (Dec 30, 2025)
 
