@@ -3,7 +3,7 @@ layout: default
 title: From Cursor to Claude Code to CoC
 ---
 
-# Introducing CoC
+# From Cursor to Claude Code to CoC
 
 So, what exactly is CoC (Copilot of Copilot)?
 
