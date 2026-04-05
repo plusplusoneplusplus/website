@@ -92,7 +92,7 @@ Here is how CoC pushes those boundaries:
 
 * **Multi-Repository Support**: CoC supports multiple repositories and multiple clones of a single remote — without Git worktrees as a built-in primitive, a concept I've never liked due to the management and memory overhead it introduces. Instead, everything stays on the main branch and fixes are committed as fixups, keeping the workflow simple and predictable.
 
-* **Decoupled Architecture & Mobile Responsiveness**: I wanted zero dependency on an editor for the AI agent itself — editors get sluggish, and the AI platform shouldn't suffer for it. CoC runs as a standalone server, completely decoupled from VS Code or any other editor, with a mobile-responsive dashboard. I can monitor queues, review diffs, and orchestrate agents from my phone, anywhere with [Dev Tunnel](https://learn.microsoft.com/en-us/azure/developer/dev-tunnels/get-started).
+* **Decoupled Architecture & Mobile Responsiveness**: I wanted zero dependency on an editor for the AI agent itself — editors get sluggish, and the AI platform shouldn't suffer for it. CoC runs as a standalone server, completely decoupled from VS Code or any other editor, with a mobile-responsive dashboard. I can monitor queues, review diffs, and orchestrate agents from my phone, anywhere with [Dev Tunnel](https://learn.microsoft.com/en-us/azure/developer/dev-tunnels/get-started) or [Tailscale](https://tailscale.com/).
 
 CoC is still evolving, and every iteration is now built by the platform itself. By focusing on first principles — human attention, alignment, and context — it provides a workflow that feels significantly better suited to my daily engineering needs than anything I used before.
 
@@ -107,7 +107,7 @@ Together, the platform and skills cover everything you need: the platform handle
 
 # By the Numbers
 
-Since CoC took over its own development in early 2026, the commit activity tells its own story.
+Since CoC took over its own development, the commit activity tells its own story.
 
 ![Daily commit activity by author showing the shift from Cursor and Claude to CoC over time](/assets/coc/commit_activity.png){: style="max-width:90%;display:block;margin:0 auto"}
 *3,329 commits from Dec 2025 to Apr 2026 — 79% AI co-authored. Cursor (orange) and Claude (pink) carried the early days; Copilot/CoC (green) has dominated ever since.*{: style="display:block;text-align:center"}
