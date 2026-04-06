@@ -132,7 +132,7 @@ Off-the-shelf tools are built for everyone, which means they're optimized for no
 
 # What's Next
 
-CoC started as a weekend sketch to fix my own frustrations. It's now the primary tool I use every day, and it builds itself. The goal from here is simple: keep refining it, open it up, and see if it resonates with other engineers who've hit the same walls.
+CoC started as a weekend sketch to fix my own frustrations. It's now the primary tool I use every day, and it builds itself. Along the way, I've also found it useful well beyond coding — the same task system works for ops like running queries and maintaining a knowledge base. The goal from here is simple: keep refining it, open it up, and see if it resonates with other engineers who've hit the same walls.
 
 # References
 
