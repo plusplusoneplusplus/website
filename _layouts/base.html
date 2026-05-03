@@ -26,6 +26,50 @@
   </div>
   <script>
     (function () {
+      var sidebar = document.getElementById('article-sidebar');
+      if (!sidebar) return;
+      var article = document.querySelector('article.card');
+      if (!article) return;
+
+      var headings = article.querySelectorAll('h1, h2');
+      var items = [];
+      var skippedTitle = false;
+      headings.forEach(function (h) {
+        if (!skippedTitle && h.tagName === 'H1') { skippedTitle = true; return; }
+        if (h.id) items.push({ tag: h.tagName, id: h.id, text: h.textContent });
+      });
+      if (items.length < 3) { sidebar.style.display = 'none'; return; }
+
+      var ul = document.createElement('ul');
+      items.forEach(function (item) {
+        var li = document.createElement('li');
+        li.className = item.tag.toLowerCase();
+        var a = document.createElement('a');
+        a.href = '#' + item.id;
+        a.textContent = item.text;
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+      sidebar.appendChild(ul);
+
+      var links = sidebar.querySelectorAll('a');
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            links.forEach(function (a) { a.classList.remove('active'); });
+            var active = sidebar.querySelector('a[href="#' + entry.target.id + '"]');
+            if (active) active.classList.add('active');
+          }
+        });
+      }, { rootMargin: '0px 0px -70% 0px' });
+
+      items.forEach(function (item) {
+        var el = document.getElementById(item.id);
+        if (el) observer.observe(el);
+      });
+    })();
+
+    (function () {
       var overlay = document.getElementById('lightbox');
       var lbImg = document.getElementById('lightbox-img');
 
