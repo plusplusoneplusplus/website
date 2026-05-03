@@ -26,40 +26,6 @@
   </div>
   <script>
     (function () {
-      var article = document.querySelector('article.card');
-      if (article) {
-        var headings = article.querySelectorAll('h1, h2');
-        var items = [];
-        var skippedTitle = false;
-        headings.forEach(function (h) {
-          if (!skippedTitle && h.tagName === 'H1') { skippedTitle = true; return; }
-          if (h.id) items.push({ tag: h.tagName, id: h.id, text: h.textContent });
-        });
-        if (items.length >= 2) {
-          var nav = document.createElement('nav');
-          nav.className = 'toc';
-          var title = document.createElement('p');
-          title.className = 'toc-title';
-          title.textContent = 'Contents';
-          nav.appendChild(title);
-          var ul = document.createElement('ul');
-          items.forEach(function (item) {
-            var li = document.createElement('li');
-            li.className = item.tag.toLowerCase();
-            var a = document.createElement('a');
-            a.href = '#' + item.id;
-            a.textContent = item.text;
-            li.appendChild(a);
-            ul.appendChild(li);
-          });
-          nav.appendChild(ul);
-          var firstH1 = article.querySelector('h1');
-          if (firstH1) firstH1.after(nav);
-        }
-      }
-    })();
-
-    (function () {
       var overlay = document.getElementById('lightbox');
       var lbImg = document.getElementById('lightbox-img');
 
