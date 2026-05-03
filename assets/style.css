@@ -31,48 +31,58 @@ body {
 .page {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 80px 24px 120px;
+  padding: 0 24px 120px;
 }
 
 .page-header {
-  margin-bottom: 64px;
-  padding-bottom: 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 10px 0;
   border-bottom: 1px solid var(--border);
+  margin-bottom: 48px;
+}
+
+.header-left {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  min-width: 0;
 }
 
 .site-title {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-size: 1rem;
-  letter-spacing: 0.02em;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
   color: var(--ink);
   text-decoration: none;
   text-transform: uppercase;
+  flex-shrink: 0;
 }
 
 .site-title:hover {
   color: var(--ink-muted);
 }
 
-.site-subtitle {
-  margin-top: 12px;
-  color: var(--ink-muted);
-  font-size: 1rem;
-  font-style: italic;
-}
-
-.site-disclaimer {
-  margin-top: 6px;
-  color: var(--ink-muted);
-  font-size: 0.78rem;
-  opacity: 0.7;
+.site-meta {
+  color: var(--ink-faint);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .nav-link {
-  display: inline-block;
-  margin-top: 20px;
+  flex-shrink: 0;
   font-family: "DM Sans", sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--ink-muted);
   text-decoration: none;
   letter-spacing: 0.01em;
@@ -92,7 +102,7 @@ body {
   width: var(--sidebar-width);
   flex-shrink: 0;
   position: sticky;
-  top: 2rem;
+  top: 4rem;
 }
 
 .article-sidebar ul {
@@ -285,11 +295,11 @@ p:last-child em {
   }
 
   .page {
-    padding: 48px 20px 80px;
+    padding: 0 20px 80px;
   }
 
-  .page-header {
-    margin-bottom: 48px;
+  .site-meta {
+    display: none;
   }
 
   h1 {

@@ -11,9 +11,10 @@
   <body>
     <div class="page">
       <header class="page-header">
-        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-        <p class="site-subtitle">Notes & guides from my tech journey</p>
-        <p class="site-disclaimer">Opinions are my own and do not represent the views of my employer.</p>
+        <div class="header-left">
+          <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <span class="site-meta">Notes & guides from my tech journey · Opinions are my own and do not represent the views of my employer.</span>
+        </div>
         {% if page.url != '/' and page.url != '/index.html' %}
           <a class="nav-link" href="{{ '/' | relative_url }}">← Home</a>
         {% endif %}
