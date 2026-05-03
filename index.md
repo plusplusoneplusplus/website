@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Welcome to My Tech Journey
+title: Seek Depth and Breadth
 ---
 
-# Welcome to My Tech Journey
+# Seek Depth and Breadth
 
 Hey there! 👋 Welcome to my corner of the internet where I share insights, experiences, and discoveries from my journey through the tech world. Here you'll find a mix of technical deep-dives, conference papers, and practical guides that I've created along the way.
 
@@ -38,7 +38,5 @@ Hey there! 👋 Welcome to my corner of the internet where I share insights, exp
 Feel free to explore the posts above, and check back regularly for new content. If you find something interesting or have questions, don't hesitate to reach out!
 
 ---
-
-*All opinions expressed here are my own and do not represent the views of my employer.*
 
 *This blog is powered by GitHub Pages and Jekyll. Want to suggest an edit? Visit the [GitHub repository](https://github.com/plusplusoneplusplus/website/edit/master/index.md).*

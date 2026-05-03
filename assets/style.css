@@ -60,6 +60,13 @@ body {
   font-style: italic;
 }
 
+.site-disclaimer {
+  margin-top: 6px;
+  color: var(--ink-muted);
+  font-size: 0.78rem;
+  opacity: 0.7;
+}
+
 .nav-link {
   display: inline-block;
   margin-top: 20px;
@@ -226,6 +233,49 @@ p:last-child em {
   h1 {
     font-size: 2rem;
   }
+}
+
+/* Table of Contents */
+.toc {
+  margin: 2rem 0 2.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.toc-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  margin: 0 0 0.75rem;
+}
+
+.toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.toc li {
+  margin-bottom: 0.35rem;
+}
+
+.toc li.h2 {
+  padding-left: 1rem;
+}
+
+.toc a {
+  color: var(--ink-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.toc a:hover {
+  color: var(--ink);
 }
 
 /* Lightbox */
