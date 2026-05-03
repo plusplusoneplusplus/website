@@ -79,8 +79,14 @@ body {
   white-space: nowrap;
 }
 
-.nav-link {
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   flex-shrink: 0;
+}
+
+.nav-link {
   font-family: "DM Sans", sans-serif;
   font-size: 0.8rem;
   color: var(--ink-muted);
@@ -88,7 +94,8 @@ body {
   letter-spacing: 0.01em;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link-active {
   color: var(--ink);
 }
 

@@ -15,9 +15,12 @@
           <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
           <span class="site-meta">Notes & guides from my tech journey · Opinions are my own and do not represent the views of my employer.</span>
         </div>
-        {% if page.url != '/' and page.url != '/index.html' %}
-          <a class="nav-link" href="{{ '/' | relative_url }}">← Home</a>
-        {% endif %}
+        <nav class="header-nav">
+          {% if page.url != '/' and page.url != '/index.html' %}
+            <a class="nav-link" href="{{ '/' | relative_url }}">← Home</a>
+          {% endif %}
+          <a class="nav-link{% if page.url == '/about.html' or page.url == '/about/' %} nav-link-active{% endif %}" href="{{ '/about' | relative_url }}">About</a>
+        </nav>
       </header>
       {{ content }}
     </div>
