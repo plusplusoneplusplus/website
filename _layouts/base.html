@@ -33,9 +33,7 @@
 
       var headings = article.querySelectorAll('h1, h2');
       var items = [];
-      var skippedTitle = false;
       headings.forEach(function (h) {
-        if (!skippedTitle && h.tagName === 'H1') { skippedTitle = true; return; }
         if (h.id) items.push({ tag: h.tagName, id: h.id, text: h.textContent });
       });
       if (items.length < 3) { sidebar.style.display = 'none'; return; }

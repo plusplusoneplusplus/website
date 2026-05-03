@@ -84,7 +84,7 @@ body {
 
 .article-layout {
   display: flex;
-  gap: 3rem;
+  gap: 2.5rem;
   align-items: flex-start;
 }
 
@@ -102,19 +102,26 @@ body {
 }
 
 .article-sidebar li {
+  margin-bottom: 0.25rem;
+}
+
+.article-sidebar li.h1 a {
+  font-weight: 500;
+  color: var(--ink);
   margin-bottom: 0.4rem;
+  display: block;
 }
 
 .article-sidebar li.h2 {
-  padding-left: 0.75rem;
+  padding-left: 0.6rem;
 }
 
 .article-sidebar a {
   color: var(--ink-muted);
   text-decoration: none;
   font-family: "DM Sans", sans-serif;
-  font-size: 0.82rem;
-  line-height: 1.4;
+  font-size: 0.76rem;
+  line-height: 1.35;
   display: block;
   transition: color 150ms ease;
 }
