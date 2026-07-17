@@ -57,10 +57,10 @@ AI doesn't replace everything, but it has quietly taken the part where engineers
 
 So where does experience come from now? My answer so far: it has to become deliberate. Learning used to come free with the work; now the work finishes without it. I've started protecting learning time the way I'd protect time for testing or design, and treating "I shipped it" and "I understand it" as two different deliverables.
 
-In practice, I pay for it in small ways. Sometimes I read the agent's failed attempts instead of only the final diff, and ask it why the first approach didn't work. I keep some debugging for myself even when the agent would be faster. I still hand-write code now and then, because the muscle memory of shaping a change is part of what keeps review sharp. And I let AI speed up the learning itself: a diagram of the architecture before I touch it, the state machine rendered instead of traced in my head.
+In practice, I pay for it in small ways. Sometimes I read the agent's failed attempts instead of only the final diff, and ask it why the first approach didn't work. I keep some debugging for myself even when the agent would be faster. I went back hand-write code now from time to time and then, because the muscle memory of shaping a change is part of what keeps review sharp. And I let AI speed up the digestion itself: a diagram of the architecture, visualized data, the state machine rendered instead of traced in my head.
 
 ## Final thoughts
 
-Here's what nags at me. Scaling has run on two supplies: the internet's worth of text, and the deep engineering judgment labs like Anthropic and OpenAI hire for, earned the slow way before agents existed. The first is mostly consumed, and the second stops replenishing if the next generation never walks the failures themselves. Where does new experience come from?
+Here's what nags at me. Scaling has run on two supplies. One is the internet's worth of text, and it's mostly consumed. The other is deep engineering judgment, the kind labs like Anthropic and OpenAI hire for, and it was all earned the slow way before agents existed. If the next generation never walks the failures themselves, that supply stops refilling too. So where does new experience come from?
 
 Partly from us, I think. Delivery and growth both matter, but growth probably matters more now: delivery keeps getting easier, while growth still takes deliberate time, and it's the part that compounds.
